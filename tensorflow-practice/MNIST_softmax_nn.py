@@ -51,7 +51,7 @@ def neural_network_model(data):
 def train_neural_network(x):
 	prediction = neural_network_model(x)
 	cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=prediction ,logits=y))
-	optimizer = tf.train.AdamOptimizer().minimize(cost)
+	optimizer = tf.train.AdamOptimizer(1e-4).minimize(cost)
 
 	hm_epoches = 10
 
