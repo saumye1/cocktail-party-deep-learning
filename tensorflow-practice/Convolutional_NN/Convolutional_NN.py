@@ -72,6 +72,10 @@ for i in range(2000):
 	sess.run(train_step, feed_dict = {x: batch[0], y_: batch[1], keep_prob: 1.0})
 	cnt = cnt + 1
 	print(cnt)
+	
+#save the graph and its parameter
+saver = tf.train.Saver()
+saver.save(sess, 'MNIST_CNN', global_step = 2000)
 
 #evaluate accuracy on a random test data of 1000 images
 #note that accuracy will move in multiples of 0.2%
