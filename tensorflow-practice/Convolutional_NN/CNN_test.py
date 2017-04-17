@@ -23,7 +23,8 @@ y_ = tf.placeholder(tf.float32, [None, 10])
 
 #modelling the convolutional neural network, with 2 convolutional layers
 #and 2 fully connected neural network layers
-#they use the relu activation function
+#they use the relu activation function with two parameters features and name
+#tf.nn.relu(features, name=None)
 W_conv1 = weight_variable([5, 5, 1, 32])
 b_conv1 = bias_variable([32])
 
