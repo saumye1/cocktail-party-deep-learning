@@ -16,8 +16,11 @@ For Linux (Ubuntu):
 3. Then install the folllwing python libraries:
 	
 	sudo pip install tensorflow
+	
 	sudo pip install librosa
+	
 	sudo pip install matplotlib
+	
 	sudo pip install numpy
 	
 To run the main program:
